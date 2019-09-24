@@ -86,5 +86,11 @@
   <ItemGroup>
     <None Include="Resources\Smashing-Yuri_Santana-1233262689.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Typing On Computer Keyboard-SoundBible.com-1096684006.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hard_shoes_1-daniel_simon %281%29.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
