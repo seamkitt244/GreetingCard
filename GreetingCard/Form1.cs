@@ -3,7 +3,10 @@ using System.Drawing;
 using System.Media;
 using System.Threading;
 using System.Windows.Forms;
-
+/// <summary>
+/// Seamus Kittmer, september 24/19 
+/// greeting card exterior and interior with animations
+/// </summary>
 namespace GreetingCard
 {
     public partial class Form1 : Form
