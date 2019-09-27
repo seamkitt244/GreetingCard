@@ -18,6 +18,7 @@ namespace GreetingCard
 
         private void Form1_Shown(object sender, EventArgs e)
         {
+            //graphic variables
             SoundPlayer twinkleSound = new SoundPlayer(Properties.Resources.twinkle);
             Graphics g = this.CreateGraphics();
             SolidBrush cardbWhite = new SolidBrush(Color.White);
@@ -30,28 +31,34 @@ namespace GreetingCard
             Font cardFrontFont = new Font("Comic Sans MS", 50);
             g.Clear(Color.LightSeaGreen);
             Thread.Sleep(400);
+            //End of variable dec
 
             //start of the front text animation
             g.DrawString("Happy",cardFrontFont, cardbWhite, -50,60);
             Thread.Sleep(50);
+
             g.Clear(Color.LightSeaGreen);
             Thread.Sleep(50);
             g.DrawString("Happy", cardFrontFont, cardbBlack, -10, 60);
+
             Thread.Sleep(50);
             twinkleSound.Play();
             g.Clear(Color.LightGreen);
             g.DrawString("Happy", cardFrontFont, cardbWhite, 100, 60);
-            g.DrawString("Meme", cardFrontFont, cardbBlack, -50, 150); 
+            g.DrawString("Meme", cardFrontFont, cardbBlack, -50, 150);
+
             Thread.Sleep(50);
             g.Clear(Color.OliveDrab);
             g.DrawString("Happy- no", cardFrontFont, cardbBlack, 60, 60);
             g.DrawString("Meme", cardFrontFont, cardbWhite, -10, 150);
+
             Thread.Sleep(50);
             g.Clear(Color.Brown);
             g.DrawString("You're in ", cardFrontFont, cardbBlack, 60, 60);
             g.DrawString("Witness", cardFrontFont, cardbWhite, 300, 150);
             g.DrawString("Protection", cardFrontFont, cardbBlack, 60, 220);
             g.RotateTransform(-60);
+
             Thread.Sleep(60);
             g.RotateTransform(-60);
             g.DrawString("Protection", cardFrontFont, cardbBlack, 50, 40);
@@ -121,8 +128,7 @@ namespace GreetingCard
             g.DrawString("Memers", cardFrontFont, cardbWhite, -10, 150);
             g.DrawString("Anonymous", cardFrontFont, cardbBlack, -10, 40);
             g.DrawString("You're in ", cardFrontFont, cardbBlack, 50, 60);
-            g.DrawString("Memers", cardFrontFont, cardbWhite, 1000, 150);
-            g.DrawString("Anonymous", cardFrontFont, cardbBlack, 200, 40);
+            g.DrawString("the Matrix", cardFrontFont, cardbWhite, 1000, 150);
             // End of text
 
             //Dawing PEpe the frog
@@ -146,8 +152,9 @@ namespace GreetingCard
             g.DrawArc(cardPenBlack, 575, 400, 60, 60, 60, 70);
             Thread.Sleep(50);
             g.Clear(Color.Brown);
-            
             // end of screen swipe
+
+
             typeSound.Play();
             //Drawing the int text
             g.DrawString("You", cardIntFont, cardbBlack, 200, 40);
@@ -161,6 +168,8 @@ namespace GreetingCard
             g.DrawString("Serve Your Sentence...", cardIntFont, cardbBlack, 70, 190);
             Thread.Sleep(2500);
             g.Clear(Color.Gray);
+
+
             //007 shoot animation drawing
             walkSound.Play();
             g.DrawLine(cardIntBlack, 0, 0, 0, 500);
@@ -168,6 +177,8 @@ namespace GreetingCard
             g.FillRectangle(cardbGreen, 240, 125, 60, 200);
             g.FillRectangle(cardbBlack, 230, 125, 30, 30);
             g.FillEllipse(cardbRed,240,100,60,60);
+            
+            
             // Text
             g.DrawString("You Have", cardIntFont, cardbWhite, 200, 40);
             g.DrawString("Violated The Law ", cardIntFont, cardbWhite, 170, 110);
